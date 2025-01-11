@@ -1157,6 +1157,12 @@ video {
 .mt-\[50px\] {
   margin-top: 50px;
 }
+.ml-16 {
+  margin-left: 4rem;
+}
+.ml-32 {
+  margin-left: 8rem;
+}
 .block {
   display: block;
 }
@@ -1644,6 +1650,9 @@ video {
 }
 .pt-4 {
   padding-top: 1rem;
+}
+.pl-32 {
+  padding-left: 8rem;
 }
 .text-center {
   text-align: center;

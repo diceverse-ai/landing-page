@@ -40,8 +40,8 @@ export function Navbar() {
           </Link>
         </div>
 
-        <nav className="flex items-center">
-          <ul className="flex items-center justify-center gap-6">
+        <nav className="flex items-center ">
+          <ul className="flex items-center justify-center gap-6 ">
             {menus.map((menu) => (
               <li key={menu.name}>
                 <button
