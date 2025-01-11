@@ -25,9 +25,10 @@ export function CTAButton({ size = 'normal' }: CTAButtonProps) {
         <div className="absolute z-10 h-[330%] w-[100%] left-[-0%] top-[-100%] animate-border-spin"
              style={{
                background: `conic-gradient(
-                 rgba(255, 223, 195) 15deg,
-                 rgba(212, 149, 255) 30deg,
-                 rgba(73, 234, 255) 45deg,
+                #7E54E0 15deg,
+                #8F84E8 30deg,
+                #91B7C3 45deg,
+                #9DFBAE 60deg,
                  transparent 60deg
                )`
              }}
@@ -36,9 +37,10 @@ export function CTAButton({ size = 'normal' }: CTAButtonProps) {
              style={{
                background: `conic-gradient(
                  transparent 180deg,
-                 rgba(255, 223, 195) 195deg,
-                 rgba(212, 149, 255) 210deg,
-                 rgba(73, 234, 255) 225deg,
+                 #7E54E0 15deg,
+                #8F84E8 30deg,
+                #91B7C3 45deg,
+                #9DFBAE 60deg,
                  transparent 250deg
                )`
              }}

@@ -68,9 +68,9 @@ body {
 
 .button-wrapper::before {
   background: conic-gradient(
-    rgba(255, 223, 195) 15deg,
-    rgba(212, 149, 255) 30deg,
-    rgb(232, 175, 18) 45deg,
+    #7E54E0 15deg,
+    #8B6EE5 30deg,
+    #9DFBAE 45deg,
     transparent 60deg
   );
   @apply absolute z-10 h-[330%] w-[100%] left-[-0%] top-[-100%] content-[''] animate-border-spin;
@@ -79,9 +79,9 @@ body {
 .button-wrapper::after {
   background: conic-gradient(
     transparent 180deg,
-    rgba(255, 223, 195) 15deg,
-    rgba(212, 149, 255) 30deg,
-    rgb(232, 175, 18) 45deg,
+    #7E54E0 15deg,
+    #8B6EE5 30deg,
+    #9DFBAE 45deg,
     transparent 250deg
   );
   @apply absolute z-10 h-[330%] w-[100%] left-[-0%] top-[-100%] content-[''] animate-border-spin;
@@ -94,9 +94,9 @@ body {
 
 .image-wrapper::before {
   background: conic-gradient(
-    rgba(255, 223, 195) 15deg,
-    rgba(212, 149, 255) 30deg,
-    rgb(232, 175, 18) 45deg,
+    #7E54E0 15deg,
+    #8B6EE5 30deg,
+    #9DFBAE 45deg,
     transparent 40deg
   );
   @apply absolute z-10 h-[200%] w-[200%] left-[-50%] top-[-50%] content-[''] animate-border-spin;
@@ -105,9 +105,9 @@ body {
 .image-wrapper::after {
   background: conic-gradient(
     transparent 180deg,
-    rgba(255, 223, 195) 15deg,
-    rgba(212, 149, 255) 30deg,
-    rgb(232, 175, 18) 45deg,
+    #7E54E0 15deg,
+    #8B6EE5 30deg,
+    #9DFBAE 45deg,
     transparent 220deg
   );
   @apply absolute z-10 h-[200%] w-[200%] left-[-50%] top-[-50%] content-[''] animate-border-spin;
