@@ -1,4 +1,4 @@
-import { Cards } from '../components/cards'
+import { Cards, CardsProps } from '../components/cards'
 import { CTAButton } from '../components/cta-button'
 import { TimelineNode } from '../components/TimelineNode'
 import { HiOutlineLightningBolt } from 'react-icons/hi'
@@ -8,7 +8,7 @@ import { FaRegCircle } from 'react-icons/fa'
 import Spline from '@splinetool/react-spline/next'
 import Image from 'next/image'
 
-const infoCards: Cards[] = [
+const infoCards: CardsProps[] = [
   {
     icon: <HiOutlineLightningBolt size={42} color="#F5F5F5" />,
     title: 'AI Game Master On-The-Go',
@@ -58,8 +58,9 @@ export default function Home() {
         </h1>
 
         <p className="max-w-[675px] w-full text-center text-[18px] mb-8">
-        Experience the future of RPGs with DiceVerse: An <span className="text-[#D495FF] ">AI-powered experience</span> that brings <span className="text-[#D495FF] ">immersive adventures</span> to your pocket. Play <span className="text-[#D495FF] ">solo or with friends</span>, develop your character across <span className="text-[#D495FF] 
-        ">multiple campaigns</span>, and dive into <span className="text-[#D495FF] ">endless worlds</span>.
+          Experience the future of  RPGs with diceverse: An AI-powered experience 
+          that brings immersive adventures to your pocket. Play solo or with friends, develop 
+          your character across multiple campaigns, and dive into endless worlds.
         </p>
 
         <CTAButton size="large" />
@@ -77,29 +78,19 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="w-full bg-[#111] border border-[#222] rounded-3xl p-8">
-  <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-    {/* Texto principal */}
-    <div className="flex flex-col gap-4 flex-1">
-      <h3 className="text-xl font-bold text-white">
-        Why DiceVerse AI?
-      </h3>
-      <p className="text-gray-400 text-[15px] leading-relaxed">
-        Experience tabletop RPGs reimagined for the modern era. Our AI Game Master adapts 
-        to your schedule, offering personalized adventures whenever you are ready to play. 
-        Choose from multiple game settings and dice systems, or create your own. Whether 
-        solo or with friends, your next adventure is just a tap away.
-      </p>
-    </div>
-
-    {/* Badge */}
-    <div className="shrink-0 self-center">
-      <span className="px-4 py-2 text-sm bg-black border border-[#222] rounded-full text-gray-400">
-        Powered by Gemini 1.5
-      </span>
-    </div>
-  </div>
-</div>
+        <div className="bg-marfin text-black rounded-3xl p-8 flex flex-col md:flex-row items-center justify-center gap:6 md:justify-between md:gap-10">
+          <div className="flex flex-col gap-2 ">
+            <h3 className="text-[18px] font-madefor-display font-bold text-black">
+              Why diceverse?
+            </h3>
+            <p className="text-[15px]">
+              Experience tabletop RPGs reimagined for the modern era. Our AI Game Master adapts 
+              to your schedule, offering personalized adventures whenever you are ready to play. 
+              Choose from multiple game settings and dice systems, or create your own. Whether 
+              solo or with friends, your next adventure is just a tap away.
+            </p>
+          </div>
+        </div>
       </section>
       <section
         id="caracteristicas"
