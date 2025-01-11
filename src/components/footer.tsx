@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import questoria from '../../public/logoquestoria.png'
+import questoria from '../../public/newblanco3.png'
 
 export function Footer() {
   return (
     <footer className="max-w-[1060px] w-full mx-auto py-8 flex flex-col items-center justify-center gap-8 md:flex-row md:items-start md:justify-between text-sm mt-[100px]">
       <div className="flex flex-col md:flex-row items-center justify-center gap-5">
-        <div className="w-[170px] h-[50px] relative">
+        <div className="w-[200px] h-[30px] relative">
           <Link href="/" className="w-full h-full">
             <Image src={questoria} alt="questoria logo" fill priority quality={100} />
           </Link>
