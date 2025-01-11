@@ -2,10 +2,10 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 // Inicializar Resend con la API key directamente para pruebas
-const resend = new Resend('re_GP2JqWcc_9e9LMq98RKNGGHwxnGGPNVbm');
+const resend = new Resend('re_R36eexjG_GpR1CaDe3GooVYgWa8o7uiy4');
 
 // ID de la audiencia (audience) en Resend - asegúrate de reemplazar esto con tu ID real
-const diceverse_AUDIENCE_ID = '9a76ac0e-30a9-4db7-8bb1-7590baca15cb';
+const diceverse_AUDIENCE_ID = 'dee127f4-5114-413e-8b7d-d9b24fcbba36';
 
 export async function POST(request: Request) {
   try {
