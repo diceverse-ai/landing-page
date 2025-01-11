@@ -8,7 +8,7 @@ import { FaRegCircle } from 'react-icons/fa'
 import Spline from '@splinetool/react-spline/next'
 import Image from 'next/image'
 
-const infoCards: CardsProps[] = [
+const infoCards: Cards[] = [
   {
     icon: <HiOutlineLightningBolt size={42} color="#F5F5F5" />,
     title: 'AI Game Master On-The-Go',
