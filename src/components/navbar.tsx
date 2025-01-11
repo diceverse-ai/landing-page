@@ -27,7 +27,7 @@ export function Navbar() {
         className="w-full max-w-[500px] py-3 px-4 shadow-[0_-1px_0_1px_#33333350]
         bg-black/30 backdrop-blur-[10px] rounded-2xl flex items-center justify-between"
       >
-        <div className="w-[190px] h-[70px] relative shrink-0">
+        <div className="w-[210px] h-[90px] relative shrink-0">
           <Link href="/" className="w-full h-full block">
             <Image
               src={questoria}
@@ -46,7 +46,7 @@ export function Navbar() {
               <li key={menu.name}>
                 <button
                   onClick={menu.action}
-                  className="text-marfin text-sm font-nunito-sans font-normal
+                  className="text-marfin text-m font-nunito-sans font-bold
                     hover:text-white hover:underline focus:text-white focus:underline
                     underline-offset-2 transition-all duration-200 whitespace-nowrap"
                 >
