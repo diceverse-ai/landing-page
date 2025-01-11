@@ -1,4 +1,4 @@
-import { Cards, CardsProps } from '../components/cards'
+import { Cards } from '../components/cards'
 import { CTAButton } from '../components/cta-button'
 import { TimelineNode } from '../components/TimelineNode'
 import { HiOutlineLightningBolt } from 'react-icons/hi'
@@ -58,7 +58,8 @@ export default function Home() {
         </h1>
 
         <p className="max-w-[675px] w-full text-center text-[18px] mb-8">
-        Experience the future of RPGs with DiceVerse: An <span className="text-[#D495FF] font-bold">AI-powered experience</span> that brings <span className="text-[#D495FF] font-bold">immersive adventures</span> to your pocket. Play <span className="text-[#D495FF] font-bold">solo or with friends</span>, develop your character across <span className="text-[#D495FF] font-bold">multiple campaigns</span>, and dive into <span className="text-[#D495FF] font-bold">endless worlds</span>.
+        Experience the future of RPGs with DiceVerse: An <span className="text-[#D495FF] ">AI-powered experience</span> that brings <span className="text-[#D495FF] ">immersive adventures</span> to your pocket. Play <span className="text-[#D495FF] ">solo or with friends</span>, develop your character across <span className="text-[#D495FF] 
+        ">multiple campaigns</span>, and dive into <span className="text-[#D495FF] ">endless worlds</span>.
         </p>
 
         <CTAButton size="large" />
