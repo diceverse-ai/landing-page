@@ -10,24 +10,25 @@ import Image from 'next/image'
 
 const infoCards: CardsProps[] = [
   {
-    icon: <HiOutlineLightningBolt size={42} color="#F5F5F5" />,
+    icon: <HiOutlineLightningBolt size={42} className="text-purple-400" />,
     title: 'AI Game Master On-The-Go',
     description:
-      'Your personal Game Master powered by Gemini 1.5, available 24/7 on your mobile device. Create and join adventures whenever inspiration strikes.',
+      'Your personal Game Master powered by Gemini 1.5, available 24/7 on your mobile. Create and join adventures whenever inspiration strikes.',
   },
   {
-    icon: <IoGameControllerOutline size={42} color="#F5F5F5" />,
-    title: 'Rich Character Development',
+    icon: <IoGameControllerOutline size={42} className="text-purple-400" />,
+    title: 'Character Development',
     description:
       "Build your legacy across multiple campaigns. Every decision shapes your character's story, abilities, and relationships in our persistent world.",
   },
   {
-    icon: <AiOutlineRobot size={42} color="#F5F5F5" />,
+    icon: <AiOutlineRobot size={42} className="text-purple-400" />,
     title: 'Immersive Storytelling',
     description:
       'Experience dynamic storytelling with AI-generated images, adaptive music, and rich narrative descriptions that bring your adventures to life.',
   },
 ]
+
 
 function Circle() {
   return (
@@ -58,39 +59,48 @@ export default function Home() {
         </h1>
 
         <p className="max-w-[675px] w-full text-center text-[18px] mb-8">
-          Experience the future of  RPGs with diceverse: An AI-powered experience 
-          that brings immersive adventures to your pocket. Play solo or with friends, develop 
-          your character across multiple campaigns, and dive into endless worlds.
+        Experience the <span className="text-[#D495FF] ">future of RPGs</span> with DiceVerse: An <span className="text-[#D495FF] ">AI-powered experience</span> that brings <span className="text-[#D495FF] ">immersive adventures</span> to your pocket. Play <span className="text-[#D495FF] 
+        ">solo or with friends</span>, develop your character across <span className="text-[#D495FF] ">multiple campaigns</span>, and dive into <span className="text-[#D495FF] ">endless worlds</span>.
         </p>
 
         <CTAButton size="large" />
       </div>
 
       <section className="w-full flex flex-col items-center justify-center lgp:items-start lgp:justify-start gap-8 lgp:gap-6">
-        <div className="w-full flex items-center justify-center gap-8 lgp:justify-between lgp:gap-0 flex-wrap">
-          {infoCards.map((card) => (
-            <Cards
-              key={card.title}
-              icon={card.icon}
-              title={card.title}
-              description={card.description}
-            />
-          ))}
-        </div>
+      <div className="w-full flex items-center justify-center gap-8 lgp:justify-between lgp:gap-8 flex-wrap">
+        {infoCards.map((card) => (
+          <Cards
+            key={card.title}
+            icon={card.icon}
+            title={card.title}
+            description={card.description}
+          />
+        ))}
+      </div>
 
-        <div className="bg-marfin text-black rounded-3xl p-8 flex flex-col md:flex-row items-center justify-center gap:6 md:justify-between md:gap-10">
-          <div className="flex flex-col gap-2 ">
-            <h3 className="text-[18px] font-madefor-display font-bold text-black">
-              Why diceverse?
+        <div className="w-full bg-[#111] border border-[#222] rounded-3xl p-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          {/* Texto principal */}
+          <div className="flex flex-col gap-4 flex-1">
+            <h3 className="text-xl font-bold text-white">
+              Why DiceVerse AI?
             </h3>
-            <p className="text-[15px]">
+            <p className="text-gray-400 text-[15px] leading-relaxed">
               Experience tabletop RPGs reimagined for the modern era. Our AI Game Master adapts 
               to your schedule, offering personalized adventures whenever you are ready to play. 
               Choose from multiple game settings and dice systems, or create your own. Whether 
               solo or with friends, your next adventure is just a tap away.
             </p>
           </div>
+
+          {/* Badge */}
+          <div className="shrink-0 self-center">
+            <span className="px-4 py-2 text-sm bg-black border border-[#222] rounded-full text-gray-400">
+              Powered by Gemini 1.5
+            </span>
+          </div>
         </div>
+      </div>
       </section>
       <section
         id="caracteristicas"
@@ -455,7 +465,7 @@ export default function Home() {
 <div className="w-full flex flex-col items-center justify-center py-20 rounded-3xl shadow-[0_0_100px_rgba(168,85,247,0.2)] relative overflow-hidden">
   {/* Background Image */}
   <Image
-    src="/bannerdiceverse.png"
+    src="/bannerquestoria.png"
     alt="Background"
     fill
     className="object-cover opacity-20"
