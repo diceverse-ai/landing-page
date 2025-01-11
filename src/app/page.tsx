@@ -1,4 +1,5 @@
 import { Cards, CardsProps } from '../components/cards'
+export { CardsProps } from '../components/cards'
 import { CTAButton } from '../components/cta-button'
 import { TimelineNode } from '../components/TimelineNode'
 import { HiOutlineLightningBolt } from 'react-icons/hi'
