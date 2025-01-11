@@ -14,7 +14,7 @@ export async function POST(request: Request) {
 
     // Primero, enviar el correo electrónico
     const emailData = await resend.emails.send({
-      from: 'diceverse <onboarding@resend.dev>',
+      from: 'Team - DiceVerse AI <developers@diceverse-ai.com>',
       to: [email],
       subject: 'Welcome to diceverse Waitlist!',
       html: `
