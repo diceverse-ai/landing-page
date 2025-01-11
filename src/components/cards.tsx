@@ -6,12 +6,18 @@ export type CardsProps = {
 
 export function Cards({ icon, title, description }: CardsProps) {
   return (
-    <div className="max-w-[330px] w-full min-h-[295px] max-h-[350px] border border-[#333] rounded-3xl p-4 flex flex-col items-start">
-      <div className="">{icon}</div>
-      <h3 className="text-base font-bold h-[42px] font-madefor-display leading-5 mt-1 mb-3">
-        {title}
-      </h3>
-      <p className="text-[15px]">{description}</p>
+    <div className="w-full max-w-[330px] p-8 rounded-2xl bg-[#111] border border-[#222] backdrop-blur-sm">
+      <div className="flex flex-col gap-5">
+        <div className="w-12 h-12 flex items-center justify-center">
+            {icon}
+        </div>
+        <h3 className="text-xl font-bold text-white">
+          {title}
+        </h3>
+        <p className="text-gray-400 text-[15px] leading-relaxed">
+          {description}
+        </p>
+      </div>
     </div>
   )
 }
