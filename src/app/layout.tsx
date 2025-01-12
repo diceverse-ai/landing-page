@@ -28,9 +28,9 @@ export const metadata: Metadata = {
  ],
  applicationName: 'DiceVerse AI',
  icons: {
-   icon: './favicon.ico',
-   apple: './diceverse-apple-icon.png',
-   shortcut: './diceverse-apple-icon.png',
+   icon: '../../public/favicon.ico',
+   apple: '../../public/diceverse-apple-icon.png',
+   shortcut: '../../public/diceverse-apple-icon.png',
  },
 }
 
