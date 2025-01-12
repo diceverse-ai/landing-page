@@ -52,9 +52,9 @@ export default function Home() {
     <main className="max-w-[1060px] w-full mx-auto">
       <div className="flex flex-col items-center justify-center h-[600px] sm:h-[480px] gap-2 mt-24">
         <h1 className="text-[45px] font-bold text-center">
-          Your AI Game Master{' '}
+          Your 360º AI Game Master{' '}<br />and{' '}
           <span className="gradient-text text-transparent animate-gradient">
-            Anywhere, Anytime
+            roleplay PvP experience
           </span>
         </h1>
 
@@ -204,7 +204,7 @@ export default function Home() {
       </ul>
         </div>
 
-        <div className="image-wrapper-2">
+        <div className="image-wrapper">
           <div className="w-[calc(100%-2px)] h-[calc(100%-2px)] z-20 relative rounded-2xl overflow-hidden bg-[#000]">
             <Image
               src="/images/mockups-fight.png"
@@ -465,7 +465,7 @@ export default function Home() {
 <div className="w-full flex flex-col items-center justify-center py-20 rounded-3xl shadow-[0_0_100px_rgba(168,85,247,0.2)] relative overflow-hidden">
   {/* Background Image */}
   <Image
-    src="/bannerquestoria.png"
+    src="/bannerdiceverse.png"
     alt="Background"
     fill
     className="object-cover opacity-20"
