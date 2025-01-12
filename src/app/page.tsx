@@ -66,7 +66,7 @@ export default function Home() {
         <CTAButton size="large" />
       </div>
 
-      <section className="w-full flex flex-col items-center justify-center lgp:items-start lgp:justify-start gap-8 lgp:gap-6">
+      <section className="w-full flex flex-col items-center justify-center lgp:items-start lgp:justify-start gap-8 lgp:gap-6 mt-8">
       <div className="w-full flex items-center justify-center gap-8 lgp:justify-between lgp:gap-8 flex-wrap">
         {infoCards.map((card) => (
           <Cards
