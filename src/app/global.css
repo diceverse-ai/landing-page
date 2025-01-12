@@ -89,7 +89,11 @@ body {
 
 /* Image Animated Glowing Border */
 .image-wrapper {
-  @apply relative max-w-[525px] w-full max-h-[430px] h-full lgp:h-[430px] aspect-[5/4] lgp:aspect-auto bg-[#333] flex items-center justify-center overflow-hidden rounded-2xl;
+  @apply relative max-w-[490px] w-full max-h-[490px] h-full lgp:h-[490px] aspect-[5/4] lgp:aspect-auto bg-[#333] flex items-center justify-center overflow-hidden rounded-2xl;
+}
+
+.image-wrapper-2 {
+  @apply relative max-w-[550px] w-full max-h-[550px] h-full lgp:h-[550px] aspect-[5/4] lgp:aspect-auto flex items-center justify-center overflow-hidden rounded-2xl;
 }
 
 .image-wrapper::before {

@@ -124,7 +124,7 @@ export default function Home() {
         <div className="image-wrapper">
           <div className="w-[calc(100%-2px)] h-[calc(100%-2px)] z-20 relative rounded-2xl overflow-hidden bg-[#000]">
             <Image
-              src="/images/character-creation.png"
+              src="/images/mockups-grid.png"
               alt="diceverse Character Creation Screen"
               className="object-scale-down"
               objectFit="fit"
@@ -147,7 +147,7 @@ export default function Home() {
         <div className="image-wrapper">
           <div className="w-[calc(100%-2px)] h-[calc(100%-2px)] z-20 relative rounded-2xl overflow-hidden bg-[#000]">
             <Image
-              src="/images/character-creation.png"
+              src="/images/mockups-chat.png"
               alt="diceverse Character Creation Screen"
               className="object-scale-down"
               objectFit="fit"
@@ -204,10 +204,10 @@ export default function Home() {
       </ul>
         </div>
 
-        <div className="image-wrapper">
+        <div className="image-wrapper-2">
           <div className="w-[calc(100%-2px)] h-[calc(100%-2px)] z-20 relative rounded-2xl overflow-hidden bg-[#000]">
             <Image
-              src="/images/character-creation.png"
+              src="/images/mockups-fight.png"
               alt="diceverse Character Creation Screen"
               className="object-scale-down"
               objectFit="fit"
