@@ -399,29 +399,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Section */}
+      {/* Pricing Section
 <section className="w-full mb-24">
   <h2 className="text-[28px] font-bold text-center mb-6">Early Access Offer</h2>
   <p className="text-gray-400 text-center mb-12 max-w-lg mx-auto">
     Join our growing community of adventurers with our special launch pricing
   </p>
   
-  {/* Single Pro Tier */}
   <div className="max-w-sm mx-auto p-8 rounded-2xl border border-purple-500 
        bg-black/50 backdrop-blur-sm relative overflow-hidden
        hover:shadow-[0_0_50px_rgba(168,85,247,0.15)] transition-all duration-300">
-    {/* Special Offer Badge */}
     <div className="absolute top-4 right-4 bg-purple-500 text-xs px-3 py-1.5 rounded-full font-medium">
       Limited Time
     </div>
 
-    {/* Pricing Header */}
     <div className="mb-6">
       <h3 className="text-2xl font-bold mb-2">Founder's Access</h3>
       <p className="text-gray-400 text-sm">Be among the first to shape diceverse</p>
     </div>
 
-    {/* Price */}
     <div className="mb-8">
       <div className="flex items-end gap-2 mb-1">
         <span className="text-4xl font-bold">$9.99</span>
@@ -430,7 +426,6 @@ export default function Home() {
       <p className="text-sm text-purple-400">Special early access pricing</p>
     </div>
 
-    {/* Features */}
     <ul className="space-y-4 mb-8">
       <li className="flex items-start gap-3">
         <span className="text-purple-500 text-lg">✓</span>
@@ -454,12 +449,12 @@ export default function Home() {
       </li>
     </ul>
 
-    {/* Additional Info */}
     <p className="text-center text-sm text-gray-500 mt-6">
       7-day money-back guarantee • Cancel anytime
     </p>
   </div>
-</section>
+</section> 
+      */}
 
 {/* Enhanced Final CTA */}
 <div className="w-full flex flex-col items-center justify-center py-20 rounded-3xl shadow-[0_0_100px_rgba(168,85,247,0.2)] relative overflow-hidden">
