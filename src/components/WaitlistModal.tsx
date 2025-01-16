@@ -55,8 +55,8 @@ export function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
 
         {/* Contenido del modal */}
         <div className="mb-6">
-          <h3 className="text-2xl font-bold text-white mb-2">Join the Waitlist</h3>
-          <p className="text-gray-400">Be the first to know when diceverse launches</p>
+          <h3 className="text-2xl font-bold text-white mb-2">Stay in the Loop</h3>
+          <p className="text-gray-400">Get exclusive updates about DiceVerse development, features, and early access opportunities</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -80,7 +80,7 @@ export function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
                      hover:from-purple-500 hover:to-blue-500 transition-all duration-300
                      disabled:opacity-50 disabled:cursor-not-allowed`}
           >
-            {status === 'loading' ? 'Joining...' :
+            {status === 'loading' ? 'Subscribing...' :
               status === 'success' ? 'Welcome aboard! 🎉' :
               status === 'error' ? 'Try Again' :
               'Join Waitlist'}
@@ -91,6 +91,10 @@ export function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
             <p className="text-red-500 text-sm text-center">Something went wrong. Please try again.</p>
           )}
         </form>
+        {/* Footer Text */}
+        <p className="text-gray-500 text-xs text-center mt-6">
+          No spam, just DiceVerse updates. Unsubscribe anytime.
+        </p>
       </div>
     </div>
   );

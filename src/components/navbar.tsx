@@ -16,7 +16,7 @@ export function Navbar() {
   
   const menus: NavbarMenuType[] = [
     {
-      name: 'Join Waitlist',
+      name: 'Newsletter',
       action: () => setIsModalOpen(true),
     },
   ];

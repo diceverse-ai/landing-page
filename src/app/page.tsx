@@ -7,25 +7,26 @@ import { AiOutlineRobot } from 'react-icons/ai'
 import { FaRegCircle } from 'react-icons/fa'
 import Spline from '@splinetool/react-spline/next'
 import Image from 'next/image'
+import { FaPatreon } from 'react-icons/fa';
 
 const infoCards: CardsProps[] = [
   {
     icon: <HiOutlineLightningBolt size={42} className="text-purple-400" />,
     title: 'AI Game Master On-The-Go',
     description:
-      'Your personal Game Master powered by Gemini 1.5, available 24/7 on your mobile. Create and join adventures whenever inspiration strikes.',
+      'Your personal Game Master powered by Gemini 1.5, available 24/7 on your mobile. Create and join adventures whenever you want. Cooperate, invade, or fight your friends.',
   },
   {
     icon: <IoGameControllerOutline size={42} className="text-purple-400" />,
     title: 'Character Development',
     description:
-      "Build your legacy across multiple campaigns. Every decision shapes your character's story, abilities, and relationships in our persistent world.",
+      "Build your legacy through multiple campaigns. Every decision is persistent across different worlds. Improve your character's story, abilities, and relationships.",
   },
   {
     icon: <AiOutlineRobot size={42} className="text-purple-400" />,
     title: 'Immersive Storytelling',
     description:
-      'Experience dynamic storytelling with AI-generated images, adaptive music, and rich narrative descriptions that bring your adventures to life.',
+      'Experience dynamic storytelling with AI-generated visuals, adaptive music, and rich narrative descriptions that take your adventures to the next level of immersion.',
   },
 ]
 
@@ -52,9 +53,9 @@ export default function Home() {
     <main className="max-w-[1060px] w-full mx-auto">
       <div className="flex flex-col items-center justify-center h-[600px] sm:h-[480px] gap-2 mt-24">
         <h1 className="text-[45px] font-bold text-center">
-          Your 360º AI Game Master{' '}<br />and{' '}
+          Your 360º AI Game Master{' '}<br />And{' '}
           <span className="gradient-text text-transparent animate-gradient">
-            roleplay PvP experience
+            Roleplay PvP Experience
           </span>
         </h1>
 
@@ -63,7 +64,24 @@ export default function Home() {
         ">solo or with friends</span>, develop your character across <span className="text-[#D495FF] ">multiple campaigns</span>, and dive into <span className="text-[#D495FF] ">endless worlds</span>.
         </p>
 
-        <CTAButton size="large" />
+        <div className="relative z-100">
+          <div className="relative w-[250px] h-[50px] rounded-full flex items-center justify-center overflow-hidden transition-all duration-200 hover:scale-105">
+            {/* Animated borders */}
+            <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-spin-slow">
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform rotate-45"></div>
+            </div>
+            
+            <a 
+              href="https://www.patreon.com/diceverse" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="relative z-10 w-[calc(100%-2px)] h-[calc(100%-2px)] bg-[#7E54E0] rounded-full flex items-center justify-center gap-3 text-white font-bold text-lg transition-colors duration-300"
+            >
+              <FaPatreon className="w-6 h-6" />
+              <span>Become a Patron</span>
+            </a>
+          </div>
+         </div>
       </div>
 
       <section className="w-full flex flex-col items-center justify-center lgp:items-start lgp:justify-start gap-8 lgp:gap-6 mt-8">
@@ -474,11 +492,27 @@ export default function Home() {
     Begin Your Epic Journey Today
   </h2>
   <p className="relative z-10 text-white text-xl mb-10 text-center max-w-2xl px-4">
-    Join the future of tabletop gaming. Create your character, choose your setting, and let our
-    AI Game Master guide you through unforgettable adventures - all from your mobile device.
+  Join the future of tabletop gaming. Create your character, let our AI Game Master guide you through 
+  unforgettable adventures and enjoy our PvP experience against your friends  - all from your mobile device.
+
   </p>
   <div className="relative z-100">
-  <CTAButton size="large" />
+  <div className="relative w-[250px] h-[50px] bg-[#7E54E0] rounded-full flex items-center justify-center overflow-hidden transition-all duration-200 hover:scale-105">
+    {/* Animated borders */}
+    <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-spin-slow">
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform rotate-45"></div>
+    </div>
+    
+    <a 
+      href="https://www.patreon.com/diceverse" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="relative z-10 w-[calc(100%-2px)] h-[calc(100%-2px)] bg-[#7E54E0] rounded-full flex items-center justify-center gap-3 text-white font-bold text-lg transition-colors duration-300"
+    >
+      <FaPatreon className="w-6 h-6" />
+      <span>Become a Patron</span>
+    </a>
+  </div>
   </div>
   <p className="relative z-10 text-sm text-white/80 mt-6 font-medium">
   🔥 +100 players have already joined
