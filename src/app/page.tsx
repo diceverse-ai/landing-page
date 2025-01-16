@@ -489,7 +489,7 @@ export default function Home() {
   <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80"></div>
   
   <h2 className="relative z-10 text-4xl md:text-5xl font-bold text-white mb-6 text-center">
-    Begin Your Epic Journey Today
+    Join Us - Build The Journey
   </h2>
   <p className="relative z-10 text-white text-xl mb-10 text-center max-w-2xl px-4">
   Join the future of tabletop gaming. Create your character, let our AI Game Master guide you through 
