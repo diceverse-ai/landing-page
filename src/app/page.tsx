@@ -126,16 +126,15 @@ export default function Home() {
       >
         <div className="flex flex-col gap-3 lgp:max-w-[480px] w-full">
           <h2 className="text-white text-[28px] font-madefor-display font-bold">
-            Intelligent Storytelling
+          Your Story, Unbound
           </h2>
           <h3 className="text-beige text-2xl font-madefor-display font-bold mb-4">
             Powered by Gemini 1.5
           </h3>
           <p className="text-[15px] leading-7">
-            Our AI Game Master crafts dynamic narratives that respond to your every decision. 
-            With advanced context understanding and memory, each session builds upon your 
-            character's history, creating truly personal and meaningful adventures. Experience 
-            storytelling that adapts to your playstyle and grows with you.
+          Shape a story that grows with you. Our AI Game Master uses advanced context understanding 
+          and memory to build each session upon your character's history, creating a dynamic and 
+          personalized adventure that evolves with your choices and actions.
           </p>
         </div>
 
@@ -177,17 +176,30 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-3 lgp:max-w-[480px] w-full">
           <h2 className="text-white text-[28px] font-madefor-display font-bold">
-            Multiplayer Adventures
+          360º Immersion
           </h2>
           <h3 className="text-purple text-2xl font-madefor-display font-bold mb-4">
-            Play Solo or Join Forces
+          A world of senses
           </h3>
           <p className="text-[15px] leading-7">
-            Whether you prefer solo adventures or want to team up with friends, diceverse 
-            adapts to your playstyle. Engage in competitive scenarios, join cooperative 
-            campaigns, or craft your own worlds and share them with the community. With 
-            multiple game settings and dice systems, every session is a unique experience.
+          Dive deeper than ever before with our revolutionary 360º Immersion experience. 
+          Our AI Game Master doesn't just tell your story – it brings it to life.
+
           </p>
+          <ul className="space-y-3">
+        <li className="flex items-start gap-2">
+          <span className="text-purple-500 font-bold">•</span>
+          <span>Enjoy dynamic music that shifts and changes with the mood of your adventure</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="text-purple-500 font-bold">•</span>
+          <span>Transform your imagination into reality through breathtaking AI-generated visuals</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="text-purple-500 font-bold">•</span>
+          <span>Engage in rich conversations with fully voiced NPCs, each with a unique voice and personality.</span>
+        </li>
+      </ul>
         </div>
       </section>
 
@@ -197,29 +209,18 @@ export default function Home() {
       >
         <div className="flex flex-col gap-3 lgp:max-w-[480px] w-full">
           <h2 className="text-white text-[28px] font-madefor-display font-bold">
-          Game Systems & Settings
+          Friends & Foes
           </h2>
           <h3 className="text-beige text-2xl font-madefor-display font-bold mb-4">
-          Your Rules, Your World
+          Choose your allies, confront your rivals
           </h3>
           <p className="text-[15px] leading-7">
-          Choose from a variety of game systems or create your own. Each setting offers unique mechanics and possibilities:
-  
+          Embark on epic quests with friends and forge legendary tales together. Coordinate strategies and create unforgettable memories.
+
           </p>
-          <ul className="space-y-3">
-        <li className="flex items-start gap-2">
-          <span className="text-purple-500 font-bold">•</span>
-          <span>Fantasy D20: Traditional dice-based combat with enhanced critical systems</span>
-        </li>
-        <li className="flex items-start gap-2">
-          <span className="text-purple-500 font-bold">•</span>
-          <span>Story Mode: Narrative-focused gameplay with flexible outcome resolution</span>
-        </li>
-        <li className="flex items-start gap-2">
-          <span className="text-purple-500 font-bold">•</span>
-          <span>Custom Systems: Design your own rules and share them with the community</span>
-        </li>
-      </ul>
+          <p className="text-[15px] leading-7">
+          Or, storm the arena for thrilling PvP combat. Unleash your characters in strategic dice-rolling battles. Test your builds. Prove your tactics. Seize victory.
+          </p>
         </div>
 
         <div className="image-wrapper">
