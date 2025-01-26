@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import questoria from '../../public/newblanco3.png'
-import { WaitlistModal } from './WaitlistModal';
+import { WaitlistModal } from './WaitlistModal'; // Asegúrate de importar correctamente el modal
 
 type NavbarMenuType = {
   name: string;
@@ -13,23 +13,22 @@ type NavbarMenuType = {
 
 export function Navbar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  
+
   const menus: NavbarMenuType[] = [
     {
-      name: 'Newsletter',
-      action: () => setIsModalOpen(true),
+      name: 'Follow us on Patreon',
+      action: () => window.open('https://patreon.com/diceverse', '_blank'), // Abre Patreon en una nueva pestaña
     },
   ];
 
   return (
-    <div className="fixed top-[18px] left-0 right-0 z-40 mx-auto px-4 w-full flex justify-center">
-      <header className="relative w-full max-w-[500px] py-3 px-6 
-                        shadow-[0_-1px_0_1px_#33333350] bg-black/30 
-                        backdrop-blur-[10px] rounded-2xl 
-                        flex items-center justify-between">
-        {/* Logo container */}
-        <div className="relative w-[210px] h-[90px]">
-          <Link href="/" className="block w-full h-full">
+    <div className="w-full px-4 fixed z-40 top-[18px] flex justify-center">
+      <header
+        className="w-full max-w-[500px] py-3 px-4 shadow-[0_-1px_0_1px_#33333350]
+        bg-black/30 backdrop-blur-[10px] rounded-2xl flex items-center justify-between"
+      >
+        <div className="w-[210px] h-[90px] relative shrink-0">
+          <Link href="/" className="w-full h-full block">
             <Image
               src={questoria}
               alt="diceverse logo"
@@ -41,17 +40,15 @@ export function Navbar() {
           </Link>
         </div>
 
-        {/* Navigation */}
-        <nav>
-          <ul className="flex items-center">
+        <nav className="flex items-center ">
+          <ul className="flex items-center justify-center gap-6 ">
             {menus.map((menu) => (
               <li key={menu.name}>
                 <button
                   onClick={menu.action}
-                  className="px-4 py-2 text-base font-bold text-marfin
-                            hover:text-white hover:underline focus:text-white 
-                            focus:underline underline-offset-2 
-                            transition-all duration-200 whitespace-nowrap"
+                  className="text-marfin text-m font-nunito-sans font-bold
+                    hover:text-white hover:underline focus:text-white focus:underline
+                    underline-offset-2 transition-all duration-200 whitespace-nowrap"
                 >
                   {menu.name}
                 </button>
@@ -61,6 +58,7 @@ export function Navbar() {
         </nav>
       </header>
 
+      {/* Modal de la lista de espera */}
       <WaitlistModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );

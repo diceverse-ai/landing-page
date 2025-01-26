@@ -8,13 +8,14 @@ import { FaRegCircle } from 'react-icons/fa'
 import Spline from '@splinetool/react-spline/next'
 import Image from 'next/image'
 import { FaPatreon } from 'react-icons/fa';
+import { FaDiscord } from 'react-icons/fa';
 
 const infoCards: CardsProps[] = [
   {
     icon: <HiOutlineLightningBolt size={42} className="text-purple-400" />,
     title: 'AI Game Master On-The-Go',
     description:
-      'Your personal Game Master powered by Gemini 1.5, available 24/7 on your mobile. Create and join adventures whenever you want. Cooperate, invade, or fight your friends.',
+      'Your personal Game Master powered by Gemini 1.5, available 24/7 on your smartphone. Create and join adventures whenever you want. Cooperate, invade, or fight your friends.',
   },
   {
     icon: <IoGameControllerOutline size={42} className="text-purple-400" />,
@@ -51,37 +52,53 @@ function DashedLine() {
 export default function Home() {
   return (
     <main className="max-w-[1060px] w-full mx-auto">
-      <div className="flex flex-col items-center justify-center h-[600px] sm:h-[480px] gap-2 mt-24">
-        <h1 className="text-[45px] font-bold text-center">
-          Your 360º AI Game Master{' '}<br />And{' '}
-          <span className="gradient-text text-transparent animate-gradient">
-            Roleplay PvP Experience
-          </span>
-        </h1>
-
-        <p className="max-w-[675px] w-full text-center text-[18px] mb-8">
-        Experience the <span className="text-[#D495FF] ">future of RPGs</span> with DiceVerse: An <span className="text-[#D495FF] ">AI-powered experience</span> that brings <span className="text-[#D495FF] ">immersive adventures</span> to your pocket. Play <span className="text-[#D495FF] 
-        ">solo or with friends</span>, develop your character across <span className="text-[#D495FF] ">multiple campaigns</span>, and dive into <span className="text-[#D495FF] ">endless worlds</span>.
-        </p>
-
-        <div className="relative z-100">
-          <div className="relative w-[250px] h-[50px] rounded-full flex items-center justify-center overflow-hidden transition-all duration-200 hover:scale-105">
-            {/* Animated borders */}
-            <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-spin-slow">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform rotate-45"></div>
-            </div>
-            
-            <a 
-              href="https://www.patreon.com/diceverse" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="relative z-10 w-[calc(100%-2px)] h-[calc(100%-2px)] bg-[#7E54E0] rounded-full flex items-center justify-center gap-3 text-white font-bold text-lg transition-colors duration-300"
-            >
-              <FaPatreon className="w-6 h-6" />
-              <span>Become a Patron</span>
-            </a>
-          </div>
-         </div>
+      <div className="flex flex-col items-center justify-center h-[600px] sm:h-[480px] gap-2 mt-40">
+ <h1 className="text-[45px] font-bold text-center">
+ Your 360º AI Game Master{' '}<br />And{' '}
+<span className="gradient-text text-transparent animate-gradient">
+Tabletop RPG Experience
+</span>
+</h1>
+<p className="max-w-[675px] w-full text-center text-[18px] mb-8">
+ Experience the <span className="text-[#D495FF] ">future of RPGs</span> with DiceVerse: An <span className="text-[#D495FF] ">AI-powered experience</span> that brings <span className="text-[#D495FF] ">immersive adventures</span> to your pocket. Play <span className="text-[#D495FF]
+ ">solo or with friends</span>, develop your character across <span className="text-[#D495FF] ">multiple campaigns</span>, and dive into <span className="text-[#D495FF] ">endless worlds</span>.
+</p>
+<div className="flex items-center justify-center gap-4">
+  <div className="relative z-100">
+    <div className="relative w-[250px] h-[50px] rounded-full flex items-center justify-center overflow-hidden transition-all duration-200 hover:scale-105">
+      {/* Animated borders */}
+      <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-spin-slow">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform rotate-45"></div>
+      </div>
+      <a
+        href="https://www.patreon.com/diceverse"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="relative z-10 w-[calc(100%-2px)] h-[calc(100%-2px)] bg-[#7E54E0] rounded-full flex items-center justify-center gap-3 text-white font-bold text-lg transition-colors duration-300"
+      >
+        <FaPatreon className="w-6 h-6" />
+        <span>Follow us on Patreon</span>
+      </a>
+    </div>
+  </div>
+  <div className="relative z-100">
+    <div className="relative w-[250px] h-[50px] rounded-full flex items-center justify-center overflow-hidden transition-all duration-200 hover:scale-105">
+      {/* Animated borders */}
+      <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-spin-slow">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform rotate-45"></div>
+      </div>
+      <a
+        href="https://discord.gg/w9jEJVkmkj"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="relative z-10 w-[calc(100%-2px)] h-[calc(100%-2px)] bg-[#5865F2] rounded-full flex items-center justify-center gap-3 text-white font-bold text-lg transition-colors duration-300"
+      >
+        <FaDiscord className="w-6 h-6" />
+        <span>Join our Discord</span>
+      </a>
+    </div>
+  </div>
+</div>
       </div>
 
       <section className="w-full flex flex-col items-center justify-center lgp:items-start lgp:justify-start gap-8 lgp:gap-6 mt-8">
@@ -511,12 +528,12 @@ export default function Home() {
       className="relative z-10 w-[calc(100%-2px)] h-[calc(100%-2px)] bg-[#7E54E0] rounded-full flex items-center justify-center gap-3 text-white font-bold text-lg transition-colors duration-300"
     >
       <FaPatreon className="w-6 h-6" />
-      <span>Become a Patron</span>
+      <span>Follow us on Patreon</span>
     </a>
   </div>
   </div>
   <p className="relative z-10 text-sm text-white/80 mt-6 font-medium">
-  🔥 +100 players have already joined
+  Join now and enjoy our first playable beta version in March 2025
   </p>
 </div>
     </main>
