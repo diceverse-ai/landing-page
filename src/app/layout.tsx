@@ -158,7 +158,6 @@ export default function RootLayout({
         id="root"
         className={`${madeforText.className} ${madeforDisplay.variable} ${nunitoSans.variable} bg-black text-marfin min-h-screen flex flex-col justify-between px-5`}
       >
-        <Navbar />
         {children}
         <Footer />
       </body>
