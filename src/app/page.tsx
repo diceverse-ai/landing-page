@@ -62,7 +62,7 @@ export default function Home() {
           className="object-contain"
         />
       </div>
-      <div className="flex flex-col items-center justify-center h-[600px] sm:h-[480px] gap-2 mt-4">
+      <div className="flex flex-col items-center gap-2 mt-10">
       <h1 className="text-[45px] font-bold text-center">
         Your 360º AI Game Master{' '}<br />And{' '}
         <span className="gradient-text text-transparent animate-gradient">
@@ -113,7 +113,7 @@ export default function Home() {
     </div>
 
 
-      <section className="w-full flex flex-col items-center justify-center lgp:items-start lgp:justify-start gap-8 lgp:gap-6 mt-8">
+      <section className="w-full flex flex-col items-center justify-center lgp:items-start lgp:justify-start gap-8 lgp:gap-6 mt-16">
       <div className="w-full flex items-center justify-center gap-8 lgp:justify-between lgp:gap-8 flex-wrap">
         {infoCards.map((card) => (
           <Cards
