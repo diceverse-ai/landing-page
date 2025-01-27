@@ -63,7 +63,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center gap-2 mt-10">
       <h1 className="text-[45px] font-bold text-center">
-        Una Experiencia TTRPG 360º Con IA {' '}<br />{' '}
+        Una Experiencia de Rol 360º Con IA {' '}<br />{' '}
         <span className="gradient-text text-transparent animate-gradient">
           Donde Quieras y Cuando Quieras
         </span>
