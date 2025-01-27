@@ -9,6 +9,8 @@ import {
 } from 'next/font/google'
 import { Navbar } from '../components/navbar'
 import { Footer } from '../components/footer'
+import LanguageSwitcher from '../components/LanguageSwitcher';
+
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://diceverse-ai.com'),
@@ -158,6 +160,7 @@ export default function RootLayout({
         id="root"
         className={`${madeforText.className} ${madeforDisplay.variable} ${nunitoSans.variable} bg-black text-marfin min-h-screen flex flex-col justify-between px-5`}
       >
+        <LanguageSwitcher />
         {children}
         <Footer />
       </body>

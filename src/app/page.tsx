@@ -16,7 +16,7 @@ const infoCards: CardsProps[] = [
     icon: <HiOutlineLightningBolt size={42} className="text-purple-400" />,
     title: 'AI Game Master On-The-Go',
     description:
-      'Your personal Game Master powered by Gemini 1.5, available 24/7 on your smartphone. Create and join adventures whenever you want. Cooperate, invade, or fight your friends.',
+      'Your personal Game Master available 24/7 on your smartphone. Create and join adventures whenever you want. Cooperate, invade, or fight your friends.',
   },
   {
     icon: <IoGameControllerOutline size={42} className="text-purple-400" />,
@@ -53,7 +53,7 @@ function DashedLine() {
 export default function Home() {
   return (
     <main className="max-w-[1060px] w-full mx-auto">
-      <div className="flex items-center justify-center mt-16">
+      <div className="flex items-center justify-center mt-8">
         <Image 
           src={questoria}
           alt="DiceVerse Logo" 
