@@ -471,7 +471,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <p className="relative z-10 text-sm text-white/80 mt-6 font-medium">
+        <p className="relative z-10 text-sm text-white/80 mt-6 font-medium text-center">
           Únete ahora y disfruta de nuestra primera beta disponible en Marzo de 2025
         </p>
       </div>

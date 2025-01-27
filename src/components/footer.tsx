@@ -11,19 +11,21 @@ export function Footer() {
             <Image src={questoria} alt="questoria logo" fill priority quality={100} />
           </Link>
         </div>
-
+        {/* 
         <div
           role="separator"
           className="hidden md:block w-[1px] h-[16px] bg-[#333]"
         ></div>
+        
         <div className="flex items-center justify-center gap-4 flex-wrap">
+          
           <Link
             href="/terms-of-useaa"
             className="text-sm text-[#999] hover:text-marfin hover:underline focus:text-marfin focus:underline underline-offset-2 transition-all duration-200"
           >
             Términos de uso
           </Link>
-        </div>
+        </div>*/}
       </div>
       &copy; 2025 DiceVerse AI, All Rights Reserved.
     </footer>
